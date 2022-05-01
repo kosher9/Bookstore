@@ -1,5 +1,6 @@
 import React from 'react';
 import Book from './Book';
+import Form from './Form';
 
 export default function Books() {
   const books = [
@@ -15,12 +16,15 @@ export default function Books() {
     },
   ];
   return (
-    <ul className="book-list">
-      {books.map((book) => (
-        <li key={book.id}>
-          <Book title={book.title} author={book.author} />
-        </li>
-      ))}
-    </ul>
+    <div>
+      <ul className="book-list">
+        {books.map((book) => (
+          <li key={book.id}>
+            <Book title={book.title} author={book.author} />
+          </li>
+        ))}
+      </ul>
+      <Form />
+    </div>
   );
 }
