@@ -2,7 +2,7 @@ const ADD = 'my-app/categories/ADD';
 const REMOVE = 'my-app/categories/REMOVE';
 const CHECK_STATUS = 'my-app/categories/CHECK_STATUS';
 
-export default function reducer(state = [], action) {
+export default function categoryReducer(state = [], action) {
   switch (action.type) {
     case ADD:
       return [
