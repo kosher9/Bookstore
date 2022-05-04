@@ -1,7 +1,20 @@
 const ADD = 'my-app/books/ADD';
 const REMOVE = 'my-app/books/REMOVE';
 
-export default function bookReducer(state = [], action) {
+const defaulState = [
+  {
+    id: 1,
+    author: 'J.K. Rowling',
+    title: 'Harry Potter and the Chamber of Secrets',
+  },
+  {
+    id: 2,
+    author: 'Robert Kiyosaki',
+    title: 'Rich Dad Poor Dad ',
+  },
+];
+
+export default function bookReducer(state = defaulState, action) {
   switch (action.type) {
     case ADD:
       return [
