@@ -4,7 +4,7 @@ import Book from './Book';
 import Form from './Form';
 
 export default function Books() {
-  const books = useSelector((state) => state.book, []);
+  const books = useSelector((state) => state.book);
   return (
     <div>
       <ul className="book-list">
