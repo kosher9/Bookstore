@@ -1,18 +1,19 @@
 import React from 'react';
 import './App.css';
-import { Link, Outlet } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Books from './components/Books';
+import Categories from './components/Categories';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <nav>
-          <Link to="/">Books</Link>
-          <Link to="/categories">Categories</Link>
-        </nav>
-      </header>
-      <Outlet />
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element={<Books />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </>
   );
 }
 
