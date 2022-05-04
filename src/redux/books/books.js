@@ -30,10 +30,14 @@ export default function bookReducer(state = defaulState, action) {
   }
 }
 
-export function addBook(id) {
+export function addBook(bookAuthor, bookTitle) {
+  const book = {
+    author: bookAuthor,
+    title: bookTitle,
+  };
   return {
     type: ADD,
-    id,
+    book,
   };
 }
 
