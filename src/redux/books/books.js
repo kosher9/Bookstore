@@ -19,9 +19,7 @@ export default function bookReducer(state = defaulState, action) {
     case ADD:
       return [
         ...state,
-        {
-          id: action.id,
-        },
+        action.newBook,
       ];
     case REMOVE:
       return state.filter((book) => book.id !== action.id);
@@ -30,14 +28,15 @@ export default function bookReducer(state = defaulState, action) {
   }
 }
 
-export function addBook(bookAuthor, bookTitle) {
-  const book = {
-    author: bookAuthor,
-    title: bookTitle,
+export function addBook(book) {
+  const newBook = {
+    id: book.id,
+    author: book.bookAuthor,
+    title: book.bookTitle,
   };
   return {
     type: ADD,
-    book,
+    newBook,
   };
 }
 

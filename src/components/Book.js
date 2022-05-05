@@ -4,9 +4,9 @@ import { remove } from '../redux/books/books';
 
 export default function Book(props) {
   const book = props;
+  const dispatch = useDispatch();
 
   const removeBook = () => {
-    const dispatch = useDispatch();
     dispatch(remove(book.id));
   };
 
