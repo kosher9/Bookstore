@@ -4,9 +4,13 @@ import { checkStatus } from '../redux/categories/categories';
 
 export default function Categories() {
   const dispatch = useDispatch();
+
+  const checkCategories = () => {
+    dispatch(checkStatus());
+  };
   return (
     <div className="category-list">
-      <button type="button" onClick={dispatch(checkStatus())}>
+      <button type="button" onClick={checkCategories}>
         Check status
       </button>
     </div>
