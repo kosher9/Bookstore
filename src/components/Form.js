@@ -8,13 +8,14 @@ export default function Form() {
     bookTitle: '',
     bookAuthor: '',
   });
+
   const dispatch = useDispatch();
 
   const submitBook = (e) => {
     e.preventDefault();
     const id = uuidv4();
-    const { booktitle, category } = inputValues;
-    const book = { id, booktitle, category };
+    const { bookTitle, bookAuthor } = inputValues;
+    const book = { id, bookTitle, bookAuthor };
     dispatch(addBook(book));
   };
 
@@ -39,9 +40,7 @@ export default function Form() {
         name="bookAuthor"
         onChange={updateInput}
       />
-      <button type="submit" value="Add Book">
-        Add Book
-      </button>
+      <input type="submit" value="Add Book" />
     </form>
   );
 }

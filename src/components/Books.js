@@ -4,13 +4,13 @@ import Book from './Book';
 import Form from './Form';
 
 export default function Books() {
-  const books = useSelector((state) => state.book, []);
+  const books = useSelector((state) => state.book);
   return (
     <div>
       <ul className="book-list">
         {books?.map((book) => (
           <li key={book.id}>
-            <Book title={book.title} author={book.author} />
+            <Book id={book.id} title={book.title} author={book.author} />
           </li>
         ))}
       </ul>
