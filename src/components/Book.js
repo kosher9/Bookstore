@@ -1,13 +1,13 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { remove } from '../redux/books/books';
+import { deleteBook } from '../redux/books/books';
 
 export default function Book(props) {
   const book = props;
   const dispatch = useDispatch();
 
   const removeBook = () => {
-    dispatch(remove(book.id));
+    dispatch(deleteBook(book.id));
   };
 
   return (
