@@ -5,12 +5,11 @@ import Form from './Form';
 import { fetchBooks } from '../redux/books/books';
 
 export default function Books() {
-  const books = useSelector((state) => state.books);
+  const books = useSelector((state) => state.book);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetchBooks();
-    console.log(books);
+    dispatch(fetchBooks());
   }, [dispatch]);
 
   return (
