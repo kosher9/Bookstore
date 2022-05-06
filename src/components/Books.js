@@ -1,10 +1,18 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import Book from './Book';
 import Form from './Form';
+import { fetchBooks } from '../redux/books/books';
 
 export default function Books() {
-  const books = useSelector((state) => state.book);
+  const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    fetchBooks();
+    console.log(books);
+  }, [dispatch]);
+
   return (
     <div>
       <ul className="book-list">
