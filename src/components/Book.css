@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap');
 
 :root {
-  --font: 'Poppins', sans-serif;
+  --font: 'Roboto+Slab', sans-serif;
 }
 
 .book {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 75px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
   font-family: var(--font);
   font-weight: 200;
   border: #dfdfdf solid 1px;
@@ -17,21 +20,23 @@
   border-radius: 5px;
 }
 
-.category,
-.title,
-.author {
-  font-weight: 200;
+.author{
+  font-weight: 500;
+}
+
+.ctn-middle{
+  margin: auto;
 }
 
 .category {
   font-size: 0.7rem;
   font-style: normal;
-  color: #121212;
+  color: #45444491;
   margin: 0 !important;
 }
 
 .title {
-  font-size: 0.8rem;
+  font-size: 1.rem;
   font-family: var(--font);
   font-weight: 500;
   margin: 0 !important;
@@ -63,31 +68,49 @@
   color: #4386bf;
 }
 
-.state-progress > h5 {
+.state-progress {
+  display: flex;
+}
+
+.state-progress-info {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.state-progress-info > h5 {
   margin: 0 !important;
   font-style: normal;
-  font-weight: 200;
 }
 
 .prog-numb {
   font-size: 1.5rem;
+  font-weight: 400;
+}
+.ctn-right{
+  margin-top: 10px;
 }
 
 .ctn-right > h5 {
-  margin-top: 0 !important;
-  margin-bottom: 3px;
   font-style: normal;
   font-weight: 200;
 }
 
+.comp {
+  font-size: 0.5rem;
+  font-weight: 200;
+}
+
 .cur-chap {
-  font-size: 0.7rem;
+  font-size: 0.5rem;
+  font-weight: 200;
+  color: rgba(116, 116, 116, 0.54);
 }
 
 .chap {
   font-size: 0.6rem;
   font-weight: 500;
   font-style: normal;
+  margin-top: 5px;
 }
 
 .chap-but {
@@ -96,7 +119,7 @@
   background-color: #0290ff;
   padding-left: 25px;
   padding-right: 25px;
-  margin-top: 10px;
+  margin: 0px;
 }
 
 .remove-but {
@@ -105,7 +128,7 @@
   font-size: 00.7rem;
   font-style: normal;
   font-weight: 200;
-  color: #4385bf96;
+  color: #4386bf;
   cursor: pointer;
   padding-bottom: 10px;
 }

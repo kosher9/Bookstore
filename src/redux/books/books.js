@@ -24,6 +24,7 @@ export function addBook(book) {
     id: book.id,
     author: book.bookAuthor,
     title: book.bookTitle,
+    category: book.category,
   };
   return {
     type: ADD,

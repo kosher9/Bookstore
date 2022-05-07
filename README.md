@@ -1,14 +1,16 @@
-# Book store app
+# Book store
 
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## Built With
 
-- React (CRA)
+- ReactJS
+- Redux
+- React Router
 
 
 ## Live Demo
->> Comming soon
+> Soon
 
 ## Getting Started
 

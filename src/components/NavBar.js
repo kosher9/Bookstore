@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import user from '../user.png';
+import { FaUserAlt } from 'react-icons/fa';
 
 export default function NavBar() {
   return (
@@ -18,7 +18,16 @@ export default function NavBar() {
         </nav>
       </div>
       <div className="header-right">
-        <img src={user} alt="user" />
+        <span className="circle">
+          <FaUserAlt
+            style={{
+              color: '#0290ff',
+              height: '15px',
+              cursor: 'pointer',
+              transition: 'all ease-in 300ms',
+            }}
+          />
+        </span>
       </div>
     </header>
   );

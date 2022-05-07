@@ -8,6 +8,7 @@ export default function Form() {
   const [inputValues, setInputValues] = useState({
     bookTitle: '',
     bookAuthor: '',
+    category: '',
   });
 
   const dispatch = useDispatch();
@@ -15,8 +16,7 @@ export default function Form() {
   const submitBook = (e) => {
     e.preventDefault();
     const id = uuidv4();
-    const category = 'Fiction';
-    const { bookTitle, bookAuthor } = inputValues;
+    const { bookTitle, bookAuthor, category } = inputValues;
     const book = {
       id,
       bookTitle,
@@ -49,13 +49,16 @@ export default function Form() {
           name="bookAuthor"
           onChange={updateInput}
         />
-        <select name="category" id="cars">
+        <select name="category" onChange={updateInput}>
+          <option value="" disabled selected>
+            Category
+          </option>
           <option value="fiction">Fiction</option>
           <option value="action">Action</option>
           <option value="fantaisy">Fantaisy</option>
           <option value="drama">Drama</option>
         </select>
-        <input className="form-but" type="submit" value="Add Book" />
+        <input className="form-but" type="submit" value="ADD BOOK" />
       </form>
     </div>
   );

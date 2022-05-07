@@ -1,5 +1,7 @@
 import React from 'react';
 import './Book.css';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { useDispatch } from 'react-redux';
 import { deleteBook } from '../redux/books/books';
 
@@ -10,6 +12,8 @@ export default function Book(props) {
   const removeBook = () => {
     dispatch(deleteBook(book.id));
   };
+
+  const chapterVal = Math.round(Math.random() * 20);
 
   return (
     <div className="book">
@@ -35,8 +39,16 @@ export default function Book(props) {
           <image alt={book.title} />
         </div>
         <div className="state-progress">
-          <h5 className="prog-numb">64%</h5>
-          <h5>completed</h5>
+          <div style={{ width: 50, height: 50 }}>
+            <CircularProgressbar value={Math.round((chapterVal / 20) * 100)} />
+          </div>
+          <div className="state-progress-info">
+            <h5 className="prog-numb">
+              {Math.round((chapterVal / 20) * 100)}
+              %
+            </h5>
+            <h5 className="comp">completed</h5>
+          </div>
         </div>
       </div>
 
