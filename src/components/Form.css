@@ -18,6 +18,7 @@ form > input {
   height: 30px;
   border: 1px solid rgba(119, 118, 118, 0.242);
 }
+
 select {
   color: rgba(62, 62, 62, 0.764);
   width: 120px;

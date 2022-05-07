@@ -20,11 +20,15 @@
   border-radius: 5px;
 }
 
-.author{
+.author {
   font-weight: 500;
+  font-size: 0.7rem;
+  font-style: normal;
+  margin: 0 !important;
+  color: #4386bf;
 }
 
-.ctn-middle{
+.ctn-middle {
   margin: auto;
 }
 
@@ -36,17 +40,10 @@
 }
 
 .title {
-  font-size: 1.rem;
+  font-size: 1rem;
   font-family: var(--font);
   font-weight: 500;
   margin: 0 !important;
-}
-
-.author {
-  font-size: 0.7rem;
-  font-style: normal;
-  margin: 0 !important;
-  color: #4386bf;
 }
 
 .ctn-book-action {
@@ -86,7 +83,8 @@
   font-size: 1.5rem;
   font-weight: 400;
 }
-.ctn-right{
+
+.ctn-right {
   margin-top: 10px;
 }
 
@@ -119,7 +117,7 @@
   background-color: #0290ff;
   padding-left: 25px;
   padding-right: 25px;
-  margin: 0px;
+  margin: 0;
 }
 
 .remove-but {
