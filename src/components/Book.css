@@ -13,7 +13,7 @@
   font-family: var(--font);
   font-weight: 200;
   border: #dfdfdf solid 1px;
-  box-shadow: 1px 1px 8px -5px #888888;
+  box-shadow: 1px 1px 8px -5px #888;
   border-radius: 5px;
 }
 
@@ -80,17 +80,17 @@
   font-weight: 200;
 }
 
-.cur-chap{
+.cur-chap {
   font-size: 0.7rem;
 }
 
-.chap{
+.chap {
   font-size: 0.6rem;
   font-weight: 500;
   font-style: normal;
 }
 
-.chap-but{
+.chap-but {
   color: white;
   border: #0290ff solid 1px;
   background-color: #0290ff;
@@ -99,7 +99,7 @@
   margin-top: 10px;
 }
 
-.remove-but{
+.remove-but {
   background-color: transparent;
   border: transparent;
   font-size: 00.7rem;

@@ -5,7 +5,7 @@ header {
   padding-top: 15px;
   padding-left: 5%;
   padding-right: 5%;
-  box-shadow: 0px 2px 5px -5px #888888;
+  box-shadow: 0 2px 5px -5px #888;
 }
 
 .header-left {
@@ -15,14 +15,14 @@ header {
 .header-title {
   margin: 0 !important;
   color: #0290ff;
-  height: fit-content;
+  height: min-content;
   font-size: 1rem;
   margin-top: 50%;
 }
 
 nav {
   margin-left: 25px;
-  height: fit-content;
+  height: min-content;
 }
 
 nav > a {
@@ -31,7 +31,7 @@ nav > a {
   margin-left: 10px;
 }
 
-img{
-    width: 20px;
-    height: 20px;  
+img {
+  width: 20px;
+  height: 20px;
 }
