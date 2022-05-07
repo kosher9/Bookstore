@@ -1,0 +1,29 @@
+.form {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.form-head {
+  font-size: 0.8rem;
+  color: rgb(127, 127, 127);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+form > input:focus {
+  outline: none;
+  border: #0290ff solid 1px;
+}
+
+.form-but {
+  color: white;
+  border: #0290ff solid 1px;
+  background-color: #0290ff;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+}

@@ -84,6 +84,7 @@ export const fetchBooks = () => async (dispatch) => {
     id: key,
     title: bookList[key][0].title,
     author: bookList[key][0].author,
+    category: bookList[key][0].category,
   }));
   dispatch(getBooks(books));
 };

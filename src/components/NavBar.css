@@ -1,4 +1,37 @@
-header{
-    display: flex;
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-shadow: 0px 2px 5px -5px #888888;
 }
 
+.header-left {
+  display: flex;
+}
+
+.header-title {
+  margin: 0 !important;
+  color: #0290ff;
+  height: fit-content;
+  font-size: 1rem;
+  margin-top: 50%;
+}
+
+nav {
+  margin-left: 25px;
+  height: fit-content;
+}
+
+nav > a {
+  font-weight: 100;
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+
+img{
+    width: 20px;
+    height: 20px;  
+}

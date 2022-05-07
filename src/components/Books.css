@@ -1,0 +1,11 @@
+.book-list {
+  list-style: none;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+hr {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(238, 238, 238, 0.749);
+}

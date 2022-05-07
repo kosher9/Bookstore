@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import './Books.css';
 import { useDispatch, useSelector } from 'react-redux';
 import Book from './Book';
 import Form from './Form';
@@ -17,10 +18,11 @@ export default function Books() {
       <ul className="book-list">
         {books?.map((book) => (
           <li key={book.id}>
-            <Book id={book.id} title={book.title} author={book.author} />
+            <Book id={book.id} title={book.title} author={book.author} category={book.category} />
           </li>
         ))}
       </ul>
+      <hr />
       <Form />
     </div>
   );
