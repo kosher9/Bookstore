@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700&display=swap');
+
+:root {
+  --font: 'Roboto+Slab', sans-serif;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 75px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  font-family: var(--font);
+  font-weight: 200;
+  border: #dfdfdf solid 1px;
+  box-shadow: 1px 1px 8px -5px #888;
+  border-radius: 5px;
+}
+
+.author {
+  font-weight: 500;
+  font-size: 0.7rem;
+  font-style: normal;
+  margin: 0 !important;
+  color: #4386bf;
+}
+
+.ctn-middle {
+  margin: auto;
+}
+
+.category {
+  font-size: 0.7rem;
+  font-style: normal;
+  color: #45444491;
+  margin: 0 !important;
+}
+
+.title {
+  font-size: 1rem;
+  font-family: var(--font);
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+.ctn-book-action {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.ctn-book-action > span {
+  color: #c7c6c6;
+}
+
+.ctn-book-action > h4 {
+  margin-top: 3px;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 200;
+  color: #4386bf;
+}
+
+.state-progress {
+  display: flex;
+}
+
+.state-progress-info {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.state-progress-info > h5 {
+  margin: 0 !important;
+  font-style: normal;
+}
+
+.prog-numb {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ctn-right {
+  margin-top: 10px;
+}
+
+.ctn-right > h5 {
+  font-style: normal;
+  font-weight: 200;
+}
+
+.comp {
+  font-size: 0.5rem;
+  font-weight: 200;
+}
+
+.cur-chap {
+  font-size: 0.5rem;
+  font-weight: 200;
+  color: rgba(116, 116, 116, 0.54);
+}
+
+.chap {
+  font-size: 0.6rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 5px;
+}
+
+.chap-but {
+  color: white;
+  border: #0290ff solid 1px;
+  background-color: #0290ff;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0;
+}
+
+.remove-but {
+  background-color: transparent;
+  border: transparent;
+  font-size: 00.7rem;
+  font-style: normal;
+  font-weight: 200;
+  color: #4386bf;
+  cursor: pointer;
+  padding-bottom: 10px;
+}

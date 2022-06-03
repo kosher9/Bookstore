@@ -1,0 +1,47 @@
+.form {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.form-head {
+  font-size: 0.8rem;
+  color: rgb(127, 127, 127);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+form > input {
+  height: 30px;
+  border: 1px solid rgba(119, 118, 118, 0.242);
+}
+
+select {
+  color: rgba(62, 62, 62, 0.764);
+  width: 120px;
+  height: 35px;
+  background: white;
+  border-image: none;
+  border-color: rgba(119, 118, 118, 0.242);
+  outline-color: rgba(119, 118, 118, 0.242);
+  box-shadow: none;
+}
+
+form > input:focus {
+  outline: none;
+  border: #0290ff solid 1px;
+}
+
+.form-but {
+  margin: 0 !important;
+  height: 30px;
+  color: white;
+  border: #0290ff;
+  background-color: #0290ff;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 10px;
+}

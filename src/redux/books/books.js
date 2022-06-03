@@ -24,6 +24,7 @@ export function addBook(book) {
     id: book.id,
     author: book.bookAuthor,
     title: book.bookTitle,
+    category: book.category,
   };
   return {
     type: ADD,
@@ -84,6 +85,7 @@ export const fetchBooks = () => async (dispatch) => {
     id: key,
     title: bookList[key][0].title,
     author: bookList[key][0].author,
+    category: bookList[key][0].category,
   }));
   dispatch(getBooks(books));
 };

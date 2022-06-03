@@ -1,3 +1,10 @@
 .App {
   color: rgb(17, 18, 18);
+  background-color: #f5f6fa;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: #ededed solid 0.5px;
+  box-shadow: 20px 20px 80px -25px #888;
 }

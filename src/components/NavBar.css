@@ -1,0 +1,38 @@
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-shadow: 0 2px 5px -5px #888;
+}
+
+.header-left {
+  display: flex;
+}
+
+.header-title {
+  margin: 0 !important;
+  color: #0290ff;
+  height: min-content;
+  font-size: 1rem;
+  margin-top: 50%;
+}
+
+nav {
+  margin-left: 25px;
+  height: min-content;
+}
+
+nav > a {
+  font-weight: 100;
+  font-size: 0.7rem;
+  margin-left: 10px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
