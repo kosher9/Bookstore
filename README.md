@@ -10,7 +10,7 @@
 
 
 ## Live Demo
-> Soon
+> https://harmonious-cucurucho-b4c5ce.netlify.app
 
 ## Getting Started
 
