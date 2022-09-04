@@ -32,6 +32,10 @@
   margin: auto;
 }
 
+.ctn-left {
+  width: 33%;
+}
+
 .category {
   font-size: 0.7rem;
   font-style: normal;
@@ -49,7 +53,6 @@
 .ctn-book-action {
   margin-top: 15px;
   display: flex;
-  justify-content: space-between;
   gap: 5px;
 }
 
@@ -80,6 +83,7 @@
 }
 
 .prog-numb {
+  width: 70px;
   font-size: 1.5rem;
   font-weight: 400;
 }
